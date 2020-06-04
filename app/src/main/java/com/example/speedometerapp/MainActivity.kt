@@ -96,10 +96,6 @@ class MainActivity : AppCompatActivity() {
         return locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)
     }
 
-    private fun calculateSpeed() {
-
-    }
-
     private fun calculateTakenTime(start: Location, end: Location) {
         if (isLocationReachedTo10KM) {
             endTime = System.currentTimeMillis()
